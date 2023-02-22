@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CompDetailsVC: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrView: UIScrollView!
@@ -54,7 +54,8 @@ class CompDetailsVC: UIViewController, UIScrollViewDelegate {
 
         // manage header height constraint
         if newHeaderViewHeight > maxHeight {
-            headerviewHeightConstraint.constant = (max(tempNewHeaderViewHeight, maxHeight) + (minHeight / 2)) + statusHeight
+            headerviewHeightConstraint
+                .constant = (max(tempNewHeaderViewHeight, maxHeight) + (minHeight / 2)) + statusHeight
         } else {
             headerviewHeightConstraint.constant = (max(newHeaderViewHeight, minHeight) + (minHeight/2)) + statusHeight
         }
