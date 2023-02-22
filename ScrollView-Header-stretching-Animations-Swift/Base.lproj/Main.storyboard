@@ -59,7 +59,19 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-Ox-FPY">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
+                                                <subviews>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HQm-jP-kXx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </tableView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="HQm-jP-kXx" firstAttribute="top" secondItem="D3P-Ox-FPY" secondAttribute="top" id="2KQ-Nc-RoO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HQm-jP-kXx" secondAttribute="trailing" id="A1z-M0-hdl"/>
+                                                    <constraint firstItem="HQm-jP-kXx" firstAttribute="leading" secondItem="D3P-Ox-FPY" secondAttribute="leading" id="l7c-rc-0g3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HQm-jP-kXx" secondAttribute="bottom" id="l8w-NE-Jj9"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,9 +135,10 @@
                         <outlet property="headerView" destination="UEt-FL-S7i" id="AFe-0E-Yhy"/>
                         <outlet property="headerviewHeightConstraint" destination="mG1-Ha-g6B" id="L3a-pV-CjI"/>
                         <outlet property="innerView" destination="6jH-Et-QoG" id="G1S-Sk-HqH"/>
-                        <outlet property="scrView" destination="ZC2-yS-3Vw" id="x5w-cU-n3m"/>
                         <outlet property="screenTitleLbl" destination="ejN-Pa-fl5" id="4TQ-Gf-3XN"/>
+                        <outlet property="scrollView" destination="ZC2-yS-3Vw" id="x5w-cU-n3m"/>
                         <outlet property="scrollViewTopConstraint" destination="89d-wU-qMF" id="gIw-Ep-1vm"/>
+                        <outlet property="tableView" destination="HQm-jP-kXx" id="G4w-1h-ZdJ"/>
                         <outlet property="titleTopConstraint" destination="FFo-Lj-9g8" id="hBl-4z-BcR"/>
                     </connections>
                 </viewController>
@@ -137,6 +150,9 @@
     <resources>
         <image name="icn_details_top.png" width="751" height="501"/>
         <image name="icn_top_shadow.png" width="750" height="192"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

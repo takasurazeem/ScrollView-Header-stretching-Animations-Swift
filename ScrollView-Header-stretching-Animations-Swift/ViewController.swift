@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var scrView: UIScrollView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var screenTitleLbl: UILabel!
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scrollViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerviewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleTopConstraint: NSLayoutConstraint!
@@ -24,13 +25,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrView.delegate = self
-        scrView.layer.cornerRadius = 25
-        scrView.layer.masksToBounds = true
-        scrView.contentInset = UIEdgeInsets(top: scrollTopEdgeInsets, left: 0, bottom: 0, right: 0)
-
+        scrollView.delegate = self
+        scrollView.layer.cornerRadius = 25
+        scrollView.layer.masksToBounds = true
+        scrollView.contentInset = UIEdgeInsets(top: scrollTopEdgeInsets, left: 0, bottom: 0, right: 0)
         // set headerview height
         headerviewHeightConstraint.constant = headerviewHeightConstraint.constant + statusHeight + 44
+
+        tableView.dataSource = self
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -40,7 +44,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let minHeight: CGFloat = 50
         let maxHeight: CGFloat = 250 + minHeight
-        let yPos = scrView.contentOffset.y
+        let yPos = scrollView.contentOffset.y
         let newHeaderViewHeight = (maxHeight - yPos) - (maxHeight-minHeight)
         let tempNewHeaderViewHeight = (maxHeight - yPos) - (maxHeight-minHeight)
         let titleValue = newHeaderViewHeight - minHeight
@@ -61,4 +65,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 20 }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
