@@ -15,12 +15,10 @@
 		4402A59522FADECE00674BF2 /* icn_details_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58922FADECE00674BF2 /* icn_details_top.png */; };
 		4402A59622FADECE00674BF2 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58A22FADECE00674BF2 /* btn_back.png */; };
 		4402A59722FADECE00674BF2 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58B22FADECE00674BF2 /* image-placeholder.jpg */; };
-		4402A59822FADECE00674BF2 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402A58D22FADECE00674BF2 /* ExpandableLabel.swift */; };
 		4402A59922FADECE00674BF2 /* UIView-CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402A58E22FADECE00674BF2 /* UIView-CornerRadius.swift */; };
 		4402A59A22FADECE00674BF2 /* UIButton-Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402A58F22FADECE00674BF2 /* UIButton-Custom.swift */; };
 		4402A59C22FADEE200674BF2 /* CompDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402A59B22FADEE200674BF2 /* CompDetailsVC.swift */; };
 		4429A12622FADE660052A930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429A12522FADE660052A930 /* AppDelegate.swift */; };
-		4429A12822FADE660052A930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429A12722FADE660052A930 /* ViewController.swift */; };
 		4429A12B22FADE660052A930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12922FADE660052A930 /* Main.storyboard */; };
 		4429A12D22FADE670052A930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12C22FADE670052A930 /* Assets.xcassets */; };
 		4429A13022FADE670052A930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12E22FADE670052A930 /* LaunchScreen.storyboard */; };
@@ -35,13 +33,11 @@
 		4402A58922FADECE00674BF2 /* icn_details_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_details_top.png; sourceTree = "<group>"; };
 		4402A58A22FADECE00674BF2 /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
 		4402A58B22FADECE00674BF2 /* image-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-placeholder.jpg"; sourceTree = "<group>"; };
-		4402A58D22FADECE00674BF2 /* ExpandableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
 		4402A58E22FADECE00674BF2 /* UIView-CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-CornerRadius.swift"; sourceTree = "<group>"; };
 		4402A58F22FADECE00674BF2 /* UIButton-Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Custom.swift"; sourceTree = "<group>"; };
 		4402A59B22FADEE200674BF2 /* CompDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompDetailsVC.swift; sourceTree = "<group>"; };
 		4429A12222FADE660052A930 /* ScrollView-Header-stretching-Animations-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScrollView-Header-stretching-Animations-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4429A12522FADE660052A930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4429A12722FADE660052A930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4429A12A22FADE660052A930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4429A12C22FADE670052A930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4429A12F22FADE670052A930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +73,6 @@
 		4402A58C22FADECE00674BF2 /* Custom-Class */ = {
 			isa = PBXGroup;
 			children = (
-				4402A58D22FADECE00674BF2 /* ExpandableLabel.swift */,
 				4402A58E22FADECE00674BF2 /* UIView-CornerRadius.swift */,
 				4402A58F22FADECE00674BF2 /* UIButton-Custom.swift */,
 			);
@@ -104,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				4429A12522FADE660052A930 /* AppDelegate.swift */,
-				4429A12722FADE660052A930 /* ViewController.swift */,
 				4402A59B22FADEE200674BF2 /* CompDetailsVC.swift */,
 				4429A12922FADE660052A930 /* Main.storyboard */,
 				4429A12C22FADE670052A930 /* Assets.xcassets */,
@@ -196,9 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4402A59A22FADECE00674BF2 /* UIButton-Custom.swift in Sources */,
-				4429A12822FADE660052A930 /* ViewController.swift in Sources */,
 				4429A12622FADE660052A930 /* AppDelegate.swift in Sources */,
-				4402A59822FADECE00674BF2 /* ExpandableLabel.swift in Sources */,
 				4402A59C22FADEE200674BF2 /* CompDetailsVC.swift in Sources */,
 				4402A59922FADECE00674BF2 /* UIView-CornerRadius.swift in Sources */,
 			);
