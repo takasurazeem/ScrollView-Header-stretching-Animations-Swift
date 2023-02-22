@@ -18,10 +18,6 @@
         <scene sceneID="yqT-8d-U1v">
             <objects>
                 <viewController storyboardIdentifier="CompDetailsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Oi7-UJ-3zt" customClass="CompDetailsVC" customModule="ScrollView_Header_stretching_Animations_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vys-LS-Zm9"/>
-                        <viewControllerLayoutGuide type="bottom" id="E1s-CV-Egn"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jl6-IH-agI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,23 +97,23 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="MVe-mk-ByW"/>
+                        <viewLayoutGuide key="safeArea" id="Alu-5M-4rW"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TTp-Xu-og0" firstAttribute="top" secondItem="jl6-IH-agI" secondAttribute="top" id="2zJ-Ad-fgu"/>
                             <constraint firstItem="ZC2-yS-3Vw" firstAttribute="width" secondItem="jl6-IH-agI" secondAttribute="width" id="4tl-7a-1Zd">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="ejN-Pa-fl5" firstAttribute="centerX" secondItem="jl6-IH-agI" secondAttribute="centerX" id="6jd-sl-Eap"/>
-                            <constraint firstItem="ZC2-yS-3Vw" firstAttribute="top" secondItem="Vys-LS-Zm9" secondAttribute="bottom" constant="51" id="89d-wU-qMF"/>
-                            <constraint firstItem="TTp-Xu-og0" firstAttribute="leading" secondItem="jl6-IH-agI" secondAttribute="leading" id="8Ie-0g-iya"/>
-                            <constraint firstItem="ejN-Pa-fl5" firstAttribute="top" secondItem="Vys-LS-Zm9" secondAttribute="bottom" constant="5" id="FFo-Lj-9g8"/>
-                            <constraint firstAttribute="trailing" secondItem="ZC2-yS-3Vw" secondAttribute="trailing" id="eMn-ol-Fuu"/>
-                            <constraint firstAttribute="trailing" secondItem="TTp-Xu-og0" secondAttribute="trailing" id="h1x-pK-NZ1"/>
+                            <constraint firstItem="ejN-Pa-fl5" firstAttribute="centerX" secondItem="Alu-5M-4rW" secondAttribute="centerX" id="6jd-sl-Eap"/>
+                            <constraint firstItem="ZC2-yS-3Vw" firstAttribute="top" secondItem="Alu-5M-4rW" secondAttribute="top" constant="51" id="89d-wU-qMF"/>
+                            <constraint firstItem="TTp-Xu-og0" firstAttribute="leading" secondItem="Alu-5M-4rW" secondAttribute="leading" id="8Ie-0g-iya"/>
+                            <constraint firstItem="ejN-Pa-fl5" firstAttribute="top" secondItem="Alu-5M-4rW" secondAttribute="top" constant="5" id="FFo-Lj-9g8"/>
+                            <constraint firstItem="Alu-5M-4rW" firstAttribute="trailing" secondItem="ZC2-yS-3Vw" secondAttribute="trailing" id="eMn-ol-Fuu"/>
+                            <constraint firstItem="Alu-5M-4rW" firstAttribute="trailing" secondItem="TTp-Xu-og0" secondAttribute="trailing" id="h1x-pK-NZ1"/>
                             <constraint firstItem="ZC2-yS-3Vw" firstAttribute="height" secondItem="jl6-IH-agI" secondAttribute="height" priority="750" id="r2B-BL-gr2"/>
-                            <constraint firstAttribute="trailing" secondItem="UEt-FL-S7i" secondAttribute="trailing" id="rbE-tK-OmV"/>
-                            <constraint firstItem="UEt-FL-S7i" firstAttribute="leading" secondItem="jl6-IH-agI" secondAttribute="leading" id="uMG-Sg-PAO"/>
-                            <constraint firstItem="ZC2-yS-3Vw" firstAttribute="leading" secondItem="jl6-IH-agI" secondAttribute="leading" id="uwE-Ke-pa7">
+                            <constraint firstItem="Alu-5M-4rW" firstAttribute="trailing" secondItem="UEt-FL-S7i" secondAttribute="trailing" id="rbE-tK-OmV"/>
+                            <constraint firstItem="UEt-FL-S7i" firstAttribute="leading" secondItem="Alu-5M-4rW" secondAttribute="leading" id="uMG-Sg-PAO"/>
+                            <constraint firstItem="ZC2-yS-3Vw" firstAttribute="leading" secondItem="Alu-5M-4rW" secondAttribute="leading" id="uwE-Ke-pa7">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="UEt-FL-S7i" firstAttribute="top" secondItem="jl6-IH-agI" secondAttribute="top" id="z6X-5b-KGY"/>
