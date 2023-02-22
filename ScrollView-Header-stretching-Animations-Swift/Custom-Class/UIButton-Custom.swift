@@ -8,23 +8,20 @@
 
 import UIKit
 
-@IBDesignable class UIButton_Custom: UIButton {
+@IBDesignable class CustomButton: UIButton {
 
-    
     @IBInspectable var customRadius: CGFloat = 0.0 {
         didSet {
             self.layer.cornerRadius = self.customRadius
         }
     }
-    
+
     @IBInspectable dynamic open var maskBound: Bool = false {
         didSet {
             self.layer.masksToBounds = maskBound
         }
     }
-    
-    
-    
+
     @IBInspectable var borderWidth: Double {
         get {
             return Double(self.layer.borderWidth)
@@ -33,14 +30,13 @@ import UIKit
             self.layer.borderWidth = CGFloat(newValue)
         }
     }
-    
-    
+
     @IBInspectable dynamic open var backdroungColor: UIColor = .gray {
         didSet {
             self.layer.backgroundColor = backdroungColor.cgColor
         }
     }
-    
+
     @IBInspectable var borderColor: UIColor? {
         get {
             return UIColor(cgColor: self.layer.borderColor!)
@@ -49,6 +45,5 @@ import UIKit
             self.layer.borderColor = newValue?.cgColor
         }
     }
-    
 
 }

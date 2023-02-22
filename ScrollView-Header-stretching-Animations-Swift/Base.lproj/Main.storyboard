@@ -54,7 +54,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-yS-3Vw">
                                 <rect key="frame" x="0.0" y="95" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jH-Et-QoG" customClass="UIView_CornerRadius" customModule="ScrollView_Header_stretching_Animations_Swift" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jH-Et-QoG" customClass="CorneredView" customModule="ScrollView_Header_stretching_Animations_Swift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-Ox-FPY">
