@@ -25,7 +25,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEt-FL-S7i" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_details_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-y1-bKX">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_details_top.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-y1-bKX">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
@@ -60,7 +60,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-Ox-FPY">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8z-iu-mVe">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8z-iu-mVe" userLabel="DragHandle">
                                                         <rect key="frame" x="192" y="10" width="30" height="4"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -158,7 +158,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icn_details_top.png" width="751" height="501"/>
+        <image name="icn_details_top.jpeg" width="640" height="427"/>
         <image name="icn_top_shadow.png" width="750" height="192"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

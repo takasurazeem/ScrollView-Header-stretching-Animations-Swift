@@ -12,7 +12,6 @@
 		4402A59222FADECE00674BF2 /* btn_join.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58622FADECE00674BF2 /* btn_join.png */; };
 		4402A59322FADECE00674BF2 /* icn_date.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58722FADECE00674BF2 /* icn_date.png */; };
 		4402A59422FADECE00674BF2 /* icn_no_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58822FADECE00674BF2 /* icn_no_1.png */; };
-		4402A59522FADECE00674BF2 /* icn_details_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58922FADECE00674BF2 /* icn_details_top.png */; };
 		4402A59622FADECE00674BF2 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58A22FADECE00674BF2 /* btn_back.png */; };
 		4402A59722FADECE00674BF2 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4402A58B22FADECE00674BF2 /* image-placeholder.jpg */; };
 		4402A59922FADECE00674BF2 /* UIView-CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402A58E22FADECE00674BF2 /* UIView-CornerRadius.swift */; };
@@ -22,6 +21,7 @@
 		4429A12B22FADE660052A930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12922FADE660052A930 /* Main.storyboard */; };
 		4429A12D22FADE670052A930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12C22FADE670052A930 /* Assets.xcassets */; };
 		4429A13022FADE670052A930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12E22FADE670052A930 /* LaunchScreen.storyboard */; };
+		F9AED92A29A7B9C2002F063B /* icn_details_top.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F9AED92929A7B9C2002F063B /* icn_details_top.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		4402A58622FADECE00674BF2 /* btn_join.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_join.png; sourceTree = "<group>"; };
 		4402A58722FADECE00674BF2 /* icn_date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_date.png; sourceTree = "<group>"; };
 		4402A58822FADECE00674BF2 /* icn_no_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_no_1.png; sourceTree = "<group>"; };
-		4402A58922FADECE00674BF2 /* icn_details_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_details_top.png; sourceTree = "<group>"; };
 		4402A58A22FADECE00674BF2 /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
 		4402A58B22FADECE00674BF2 /* image-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-placeholder.jpg"; sourceTree = "<group>"; };
 		4402A58E22FADECE00674BF2 /* UIView-CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-CornerRadius.swift"; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		4429A12C22FADE670052A930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4429A12F22FADE670052A930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4429A13122FADE670052A930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AED92929A7B9C2002F063B /* icn_details_top.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icn_details_top.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 				4402A58622FADECE00674BF2 /* btn_join.png */,
 				4402A58722FADECE00674BF2 /* icn_date.png */,
 				4402A58822FADECE00674BF2 /* icn_no_1.png */,
-				4402A58922FADECE00674BF2 /* icn_details_top.png */,
+				F9AED92929A7B9C2002F063B /* icn_details_top.jpeg */,
 				4402A58A22FADECE00674BF2 /* btn_back.png */,
 				4402A58B22FADECE00674BF2 /* image-placeholder.jpg */,
 			);
@@ -170,8 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4402A59222FADECE00674BF2 /* btn_join.png in Resources */,
+				F9AED92A29A7B9C2002F063B /* icn_details_top.jpeg in Resources */,
 				4429A13022FADE670052A930 /* LaunchScreen.storyboard in Resources */,
-				4402A59522FADECE00674BF2 /* icn_details_top.png in Resources */,
 				4429A12D22FADE670052A930 /* Assets.xcassets in Resources */,
 				4402A59022FADECE00674BF2 /* icn_top_shadow.png in Resources */,
 				4429A12B22FADE660052A930 /* Main.storyboard in Resources */,
