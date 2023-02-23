@@ -29,6 +29,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.layer.cornerRadius = 25
         scrollView.layer.masksToBounds = true
         scrollView.contentInset = UIEdgeInsets(top: scrollTopEdgeInsets, left: 0, bottom: 0, right: 0)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
         // set headerview height
         headerviewHeightConstraint.constant = headerviewHeightConstraint.constant + statusHeight + 44
 
@@ -68,10 +70,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 }
 
 extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 20 }
-    
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int
+    ) -> Int { 20 }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "\(indexPath.row)"
+        return cell
     }
 }
