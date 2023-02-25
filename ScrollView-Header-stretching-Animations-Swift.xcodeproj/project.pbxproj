@@ -21,6 +21,8 @@
 		4429A12B22FADE660052A930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12922FADE660052A930 /* Main.storyboard */; };
 		4429A12D22FADE670052A930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12C22FADE670052A930 /* Assets.xcassets */; };
 		4429A13022FADE670052A930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4429A12E22FADE670052A930 /* LaunchScreen.storyboard */; };
+		F95D0BED29AA90820095DCB9 /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D0BEC29AA90820095DCB9 /* ScrollableView.swift */; };
+		F95D0BEF29AA909B0095DCB9 /* ScrollableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95D0BEE29AA909B0095DCB9 /* ScrollableView.xib */; };
 		F9AED92A29A7B9C2002F063B /* icn_details_top.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F9AED92929A7B9C2002F063B /* icn_details_top.jpeg */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		4429A12C22FADE670052A930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4429A12F22FADE670052A930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4429A13122FADE670052A930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95D0BEC29AA90820095DCB9 /* ScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
+		F95D0BEE29AA909B0095DCB9 /* ScrollableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollableView.xib; sourceTree = "<group>"; };
 		F9AED92929A7B9C2002F063B /* icn_details_top.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icn_details_top.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,7 @@
 			children = (
 				4429A12522FADE660052A930 /* AppDelegate.swift */,
 				4402A59B22FADEE200674BF2 /* ViewController.swift */,
+				F95D0BF029AA90A00095DCB9 /* ScrollableView */,
 				4429A12922FADE660052A930 /* Main.storyboard */,
 				4429A12C22FADE670052A930 /* Assets.xcassets */,
 				4429A12E22FADE670052A930 /* LaunchScreen.storyboard */,
@@ -108,6 +113,15 @@
 				4429A13122FADE670052A930 /* Info.plist */,
 			);
 			path = "ScrollView-Header-stretching-Animations-Swift";
+			sourceTree = "<group>";
+		};
+		F95D0BF029AA90A00095DCB9 /* ScrollableView */ = {
+			isa = PBXGroup;
+			children = (
+				F95D0BEC29AA90820095DCB9 /* ScrollableView.swift */,
+				F95D0BEE29AA909B0095DCB9 /* ScrollableView.xib */,
+			);
+			path = ScrollableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 				4402A59422FADECE00674BF2 /* icn_no_1.png in Resources */,
 				4402A59322FADECE00674BF2 /* icn_date.png in Resources */,
 				4402A59722FADECE00674BF2 /* image-placeholder.jpg in Resources */,
+				F95D0BEF29AA909B0095DCB9 /* ScrollableView.xib in Resources */,
 				4402A59122FADECE00674BF2 /* icn_info.png in Resources */,
 				4402A59622FADECE00674BF2 /* btn_back.png in Resources */,
 			);
@@ -212,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95D0BED29AA90820095DCB9 /* ScrollableView.swift in Sources */,
 				4402A59A22FADECE00674BF2 /* UIButton-Custom.swift in Sources */,
 				4429A12622FADE660052A930 /* AppDelegate.swift in Sources */,
 				4402A59C22FADEE200674BF2 /* ViewController.swift in Sources */,
