@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
+        let initialViewController = MainViewController()
 
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()

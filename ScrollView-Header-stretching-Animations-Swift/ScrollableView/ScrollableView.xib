@@ -14,9 +14,21 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollableView" customModule="ScrollView_Header_stretching_Animations_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="fvJ-xS-oQZ" id="MVU-JP-7YD"/>
+                <outlet property="headerView" destination="6dF-kZ-zWe" id="LwC-Eu-UQE"/>
+                <outlet property="headerviewHeightConstraint" destination="ai8-BI-2bv" id="n1j-y7-esu"/>
+                <outlet property="innerView" destination="oHI-Q9-Qhq" id="8yl-7q-1Gn"/>
+                <outlet property="screenTitleLbl" destination="LE6-T9-evM" id="yf6-Ar-Zz7"/>
+                <outlet property="scrollView" destination="TqY-MD-dsN" id="BcE-gw-00Z"/>
+                <outlet property="scrollViewTopConstraint" destination="de4-Tr-ESi" id="VHn-tI-jIV"/>
+                <outlet property="tableView" destination="Cq2-wx-3r6" id="ndH-bA-VGu"/>
+                <outlet property="titleTopConstraint" destination="J3r-ga-npm" id="z6z-RJ-3M1"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="fvJ-xS-oQZ" customClass="ScrollableView" customModule="ScrollView_Header_stretching_Animations_Swift" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="fvJ-xS-oQZ">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -138,16 +150,6 @@
                 </constraint>
                 <constraint firstItem="Le6-k7-Zc7" firstAttribute="trailing" secondItem="TqY-MD-dsN" secondAttribute="trailing" id="zIN-ll-Y0B"/>
             </constraints>
-            <connections>
-                <outlet property="headerView" destination="6dF-kZ-zWe" id="hQB-YW-VCR"/>
-                <outlet property="headerviewHeightConstraint" destination="ai8-BI-2bv" id="nY4-ke-wuw"/>
-                <outlet property="innerView" destination="oHI-Q9-Qhq" id="ghW-rj-wMu"/>
-                <outlet property="screenTitleLbl" destination="LE6-T9-evM" id="gxX-bK-Hyy"/>
-                <outlet property="scrollView" destination="TqY-MD-dsN" id="M76-kc-5dI"/>
-                <outlet property="scrollViewTopConstraint" destination="Zcx-s1-Z0h" id="ddb-Tv-L0E"/>
-                <outlet property="tableView" destination="Cq2-wx-3r6" id="c1V-Ba-GWJ"/>
-                <outlet property="titleTopConstraint" destination="Zcx-s1-Z0h" id="bqV-Gq-1Im"/>
-            </connections>
             <point key="canvasLocation" x="-195" y="-13"/>
         </view>
     </objects>

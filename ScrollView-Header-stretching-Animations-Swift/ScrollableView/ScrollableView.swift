@@ -10,6 +10,7 @@ import UIKit
 
 class ScrollableView: UIView, UIScrollViewDelegate {
     
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var innerView: UIView!
@@ -23,12 +24,21 @@ class ScrollableView: UIView, UIScrollViewDelegate {
     var statusHeight = UIApplication.shared.statusBarFrame.size.height// Statusbar height
     let scrollTopEdgeInsets: CGFloat = 200// scrollView Top insets size
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
     required init?(coder: NSCoder) {
-        fatalError("")
+        super.init(coder: coder)
+        commonInit()
     }
 
-    init() {
-        super.init(frame: .zero)
+    private func commonInit() {
+        Bundle.main.loadNibNamed("ScrollableView", owner: self)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         scrollView.delegate = self
         scrollView.layer.cornerRadius = 25
         scrollView.layer.masksToBounds = true
