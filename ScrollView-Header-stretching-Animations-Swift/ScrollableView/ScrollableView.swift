@@ -1,15 +1,16 @@
 //
-//  CompDetailsVC.swift
-//  Sportily
+//  ScrollableView.swift
+//  ScrollView-Header-stretching-Animations-Swift
 //
-//  Created by Artoon Solutions Private Limited on 25/07/19.
-//  Copyright © 2019 Artoon Solutions Private Limited. All rights reserved.
+//  Created by Takasur Azeem on 25/02/2023.
+//  Copyright © 2023 Sanket Vaghela. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
-
+class ScrollableView: UIView, UIScrollViewDelegate {
+    
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var innerView: UIView!
@@ -23,8 +24,21 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var statusHeight = UIApplication.shared.statusBarFrame.size.height// Statusbar height
     let scrollTopEdgeInsets: CGFloat = 200// scrollView Top insets size
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+
+    private func commonInit() {
+        Bundle.main.loadNibNamed("ScrollableView", owner: self)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         scrollView.delegate = self
         scrollView.layer.cornerRadius = 25
         scrollView.layer.masksToBounds = true
@@ -38,10 +52,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-//        tblHeightConstraint.constant = self.leaderboardTblView.contentSize.height
-    }
+    
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let minHeight: CGFloat = 50
@@ -69,7 +80,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension ScrollableView: UITableViewDataSource {
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
