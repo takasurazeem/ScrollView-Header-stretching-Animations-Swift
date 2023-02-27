@@ -35,7 +35,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dF-kZ-zWe" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_details_top.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="nGA-mc-1Rr">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_details_top" translatesAutoresizingMaskIntoConstraints="NO" id="nGA-mc-1Rr">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
                             <color key="backgroundColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
@@ -49,7 +49,7 @@
                         <constraint firstAttribute="bottom" secondItem="nGA-mc-1Rr" secondAttribute="bottom" id="xCA-v9-L4R"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_top_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="de4-Tr-ESi">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_top_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="de4-Tr-ESi">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="112" id="w56-Ga-omi"/>
@@ -154,8 +154,8 @@
         </view>
     </objects>
     <resources>
-        <image name="icn_details_top.jpeg" width="640" height="427"/>
-        <image name="icn_top_shadow.png" width="750" height="192"/>
+        <image name="icn_details_top" width="640" height="427"/>
+        <image name="icn_top_shadow" width="750" height="192"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
